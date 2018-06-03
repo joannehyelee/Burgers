@@ -22,6 +22,8 @@ APP.use(BODYPARSER.json());
 
 // ROUTER
 // ===================================================
+const ROUTES = require("./controllers/burgers_controller.js");
+APP.use(ROUTES);
 
 
 // LISTENER
