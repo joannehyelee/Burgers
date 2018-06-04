@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="jumbotron text-white rounded">
+		<h1 class="display-3 text-center">Burgers</h1>
+	</div>
+    <div class="text-center pa">
+        <img src="img/burger.png" width="210">
+    </div>
+	<div class="col-12 d-flex flex-row justify-content-center text-center">
+		<div class="col-6">
+			{{#each burgers}}
+			<div id="burgers-before" class="mb">
+				<p class="d-inline-block">
+					{{id}}. {{burger_name}}
+				</p>
+				<button data-id="{{id}}" class="delquote">Devour</button>
+			</div>
+			{{/each}}
+		</div>
+		<div class="col-6" style="border:1px solid red;">
+			
+		</div>
+	</div>
+	<div class="card col-lg-7 float-center">
+		<div class="card-body">
+			<form>
+				<div class="form-group">
+					<label for="burger">Enter a burger you want to eat:</label>
+					<input type="text" class="form-control mb" id="burger">
+					<button type="submit" class="btn btn-info btn-lg" id="add-button">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

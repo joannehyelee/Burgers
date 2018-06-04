@@ -1,0 +1,57 @@
+$primary-color: #333;
+$background: #D5AB59;
+$dark-pink: #D683B4;
+$spacing: 2em;
+$spacing-bottom: 0.7em;
+$center: 0 auto;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $primary-color;
+}
+
+.jumbotron {
+    margin: 30px 0 0 0;
+    padding: $spacing;
+    background: $background;
+}
+
+.pa {
+    padding: $spacing;
+}
+
+.pb {
+    padding-bottom: $spacing-bottom;
+}
+
+.mb {
+    margin-bottom: $spacing-bottom;
+}
+
+.btn-info {
+    background: $background;
+    border-color: $background;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background: $dark-pink !important;
+    border-color: $dark-pink !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.float-center {
+    margin: $center;
+}
+
+.card {
+    border: 0;
+}
+
+#burgers-before {
+    border: 1px solid $primary-color;
+    p {
+        padding: $spacing;
+        margin-bottom: 0;
+    }
+}

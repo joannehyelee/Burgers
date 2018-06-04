@@ -6,7 +6,7 @@
 // ===================================================
 const EXPRESS = require("express");
 const BODYPARSER = require("body-parser");
-
+const EXPHBS = require("express-handlebars");
 
 // EXPRESS CONFIGURATION
 // ===================================================
@@ -19,6 +19,9 @@ APP.use(EXPRESS.static("public"));
 APP.use(BODYPARSER.urlencoded({ extended: true }));
 APP.use(BODYPARSER.json());
 
+// Handlebars
+APP.engine("handlebars", EXPHBS({ defaultLayout: "main" }));
+APP.set("view engine", "handlebars");
 
 // ROUTER
 // ===================================================

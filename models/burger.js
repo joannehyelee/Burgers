@@ -7,17 +7,17 @@ const BURGER = {
         ORM.selectAll("burgers", function(res) {
             cb(res);
         });
-    },
-    insertOne: function(burgerCol, devouredCol, burgerVal, devouredVal, cb) {
-        ORM.insertOne("burgers", burgerCol, devouredCol, burgerVal, devouredVal, function(res) {
-            cb(res);
-        });
-    },
-    updateOne: function(devouredCol, devouredVal, burgerCol, burgerVal, cb) {
-        ORM.insertOne("burgers", devouredCol, devouredVal, burgerCol, burgerVal, function(res) {
-            cb(res);
-        });
     }
+    // insertOne: function(burgerCol, devouredCol, burgerVal, devouredVal, cb) {
+    //     ORM.insertOne("burgers", burgerCol, devouredCol, burgerVal, devouredVal, function(res) {
+    //         cb(res);
+    //     });
+    // },
+    // updateOne: function(devouredCol, devouredVal, burgerCol, burgerVal, cb) {
+    //     ORM.insertOne("burgers", devouredCol, devouredVal, burgerCol, burgerVal, function(res) {
+    //         cb(res);
+    //     });
+    // }
 };
 
 module.exports = BURGER;
